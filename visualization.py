@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
+from graph import Graph
 
 def plot_graph(adjmatrix):
     nx_graph = nx.Graph()
@@ -20,5 +21,5 @@ def plot_graph(adjmatrix):
 
 
 if __name__ == "__main__":
-    adjmatrix = [[0, 1, 0], [1, 0, 1], [0, 1, 0]]
+    adjmatrix = Graph().read_file('./data/graphs.dat')
     plot_graph(adjmatrix)
