@@ -2,5 +2,6 @@ matplotlib
 networkx>=3.0
 numpy
 scikit-learn
+seaborn
 
 urllib3
