@@ -18,8 +18,3 @@ def plot_graph(adjmatrix):
     nx.draw(nx_graph, pos, with_labels=True, node_size=700, node_color='lightblue', font_size=10)
     nx.draw_networkx_edge_labels(nx_graph, pos, edge_labels=labels)
     plt.show()
-
-
-if __name__ == "__main__":
-    adjmatrix = Graph().read_file('./data/graphs.dat')
-    plot_graph(adjmatrix)
